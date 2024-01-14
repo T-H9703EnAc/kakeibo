@@ -1,0 +1,21 @@
+{
+  "name": "kotlin",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "kotlin",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      // VSCodeで使用する拡張機能
+      "extensions": [
+        "sethjones.kotlin-on-vscode", // Kotlin on VSCode
+        "vscjava.vscode-java-pack", // Extension Pack for Java
+        "vmware.vscode-boot-dev-pack", // Spring Boot Extension Pack
+        "MS-CEINTL.vscode-language-pack-ja" // Japanese Language Pack for Visual Studio Code
+      ]
+    }
+  },
+  "forwardPorts": [8080, 5432]
+}
